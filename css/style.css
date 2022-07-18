@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    height: 70px;
+    background-color: #333;
+    color: white;
+
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.header .brand{
+    font-size: 32px;
+    text-decoration: none;
+    color: white;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+
+}
+nav   li a{
+display: block;
+min-width: 50px;
+margin: 10px 5px;
+padding:5px;
+font-size: 25px;
+color: white;
+text-decoration: none;
+}
+.form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+width: 40%;
+text-align: center;
+background-color: #bc6ff1;
+padding: 20px;
+}
+.form h2{
+    font-size: 50px;
+    letter-spacing: 2px;
+}
+.form input{
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+    height: 40px;
+    border: 1px solid #ddd;
+    padding: 5px;
+    outline: 0;
+}
+.form input[type=submit]{
+    font-size: 20px;
+    text-transform: uppercase;
+    height: auto;
+    cursor: pointer;
+}
+.form input[type=submit]:hover{
+    opacity: .8;
+}
+nav ul#user_info{
+    display: none;
+}
+nav #user_info li{
+    position: relative; 
+    margin: 0 7px;
+}
+nav #user_info li i {
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    text-align: center;
+    position: absolute;
+    top: 20px;
+    left: -11px;
+    
+}
+nav #user_info li .badge {
+    width: 20px;
+    height: 20px;
+    background-color: crimson;
+    color: white;
+    position: absolute;
+    border-radius: 50%;
+    top: 5px;
+    right: -20px;
+    font-size: 10px;
+    line-height: 20px;
+    text-align: center;
+    display: none;
+}
+ #user_info  .cart-product{
+    position: absolute;
+    width: 250px;
+    transform: translate(-46%,0);
+    top: 46px;
+    padding: 10px;
+    border: 1px solid green;
+    background-color: #eaeaea;
+    color: #333;
+    display: none;
+   
+
+}
+ #user_info .cart-product a{
+    display: block;
+    margin: 0;
+    padding: 5px;
+    background-color: green;
+    color: #fff;
+    text-align: center; 
+}
+.product{
+    width: 60%;
+    margin: 10px 0;
+}
+.prodct-item{
+    display: flex;
+    width: 100%;
+    border: 1px solid #ddd;
+    min-height: 150px;
+}
+.prodct-item img{
+    width: 25%;
+    margin-right: 10px;
+}
+.product-item-action{
+    flex: 1;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.product-item-action .add{
+display: block;
+margin-left: auto;
+background-color: green;
+color: white;
+border: 0;
+padding: 10px 20px;
+font-size: 16px;
+cursor: pointer;
+}
+.product-item-action #fav{
+    cursor: pointer;
+    display: block;
+    width: 20px;
+    margin-left: auto;
+}
+
+@media (min-width:360px) and (max-width:767px){
+    .header {
+            display: flex;
+            justify-content: center;
+        width: 100%;
+        flex-direction: column;
+        height: 85px;
+        text-align: start;
+        padding: 0px 0;
+        margin: 0px 0;
+        
+        
+    }
+    .header .brand{
+text-align: center;
+    }
+.product{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .prodct-item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .product-item-action{
+        display: flex;
+        flex-direction: row;
+    }
+        .product-item-action .fav{
+        margin: 10px ;       
+    }
+    .form{
+        width: 100%;
+    }
+}
