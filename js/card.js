@@ -4,7 +4,7 @@ let noproduct =document.querySelector('.noproduct')
 
 function drawproductui (allproducts =[]){
 if(JSON.parse(localStorage.getItem('productincart')).length === 0){
-noproduct.innerHTML='!مافيش منتجات هنا روح اختار الاول وبعدين تعالى تانى'
+noproduct.innerHTML='مافيش منتجات هنا روح اختار الاول وبعدين تعالى تانى'
 }
 
     let products =JSON.parse(localStorage.getItem('productincart')|| allproducts)
